@@ -38,3 +38,6 @@ type AlbumPropertyTypes1 =
   | Album3["releaseYear"];
 type AlbumPropertyTypes2 = Album3["title" | "isSingle" | "releaseYear"];
 type AlbumPropertyTypes3 = Album3[keyof Album3];
+
+// To obtain type of constituent elements in an array
+const arr = [1, 2, "Mango", 4];
